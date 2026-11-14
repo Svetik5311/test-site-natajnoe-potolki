@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Потолок&Свет | Натяжные потолки в Набережных Челнах</title>
+  <meta name="description" content="Установка натяжных потолков в Набережных Челнах за 1 день. Замер бесплатно, гарантия 15 лет." />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <img src="logo.svg" alt="Логотип Потолок&Свет" class="logo" />
+      <nav class="nav">
+        <a href="#benefits">Преимущества</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn-outline" href="tel:+78552000000">+7 (8552) 00-00-00</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Натяжные потолки в Набережных Челнах</h1>
+        <p class="lead">Ровный потолок и тёплый свет за 1 день. Замер и расчёт бесплатно, гарантия 15 лет.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacts">Вызвать замерщика</a>
+          <a class="btn btn-outline" href="#prices">Посмотреть цены</a>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>12 лет</strong> на рынке Челнов</li>
+          <li><strong>4 800+</strong> установленных потолков</li>
+          <li><strong>1 день</strong> средний срок монтажа</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-top">Спокойный ремонт без пыли</div>
+        <div class="hero-card-main">от 350 ₽/м²</div>
+        <div class="hero-card-note">полотна ПВХ, монтаж и светильники</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="section">
+    <div class="container">
+      <h2>Почему выбирают нас</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Чистый монтаж</h3>
+          <p>Работаем с пылесосом и защитной плёнкой. Мебель накрываем, мусор выносим с собой.</p>
+        </article>
+        <article class="card">
+          <h3>Договор и гарантия</h3>
+          <p>Фиксируем цену до начала работ. Гарантия на полотно и монтаж 15 лет по договору.</p>
+        </article>
+        <article class="card">
+          <h3>Свои мастера</h3>
+          <p>Бригады в штате, без посредников. Каждый мастер работает в компании от 5 лет.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="section section-alt">
+    <div class="container">
+      <h2>Цены</h2>
+      <div class="cards">
+        <article class="card price-card">
+          <h3>Матовый</h3>
+          <p class="price">от 350 ₽/м²</p>
+          <p>Классика для спальни и зала. Ровная поверхность без бликов.</p>
+        </article>
+        <article class="card price-card">
+          <h3>Глянцевый</h3>
+          <p class="price">от 390 ₽/м²</p>
+          <p>Визуально увеличивает комнату, отражает свет. Хорош для малых помещений.</p>
+        </article>
+        <article class="card price-card">
+          <h3>С подсветкой</h3>
+          <p class="price">от 690 ₽/м²</p>
+          <p>Парящий потолок или световые линии. Тёплый сценарий освещения в подарок.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container contacts-inner">
+      <div>
+        <h2>Оставьте заявку</h2>
+        <p>Перезвоним в течение 15 минут в рабочее время, согласуем удобный день замера.</p>
+        <p class="contacts-phone">Телефон: <a href="tel:+78552000000">+7 (8552) 00-00-00</a></p>
+      </div>
+      <form class="form" id="lead-form">
+        <label>Ваше имя
+          <input type="text" name="name" placeholder="Как к вам обращаться" required />
+        </label>
+        <label>Телефон
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </label>
+        <button class="btn btn-primary" type="submit">Жду звонка</button>
+        <p class="form-note" id="form-note">Нажимая кнопку, вы соглашаетесь с обработкой данных.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Потолок&Свет, Набережные Челны</span>
+      <span>Ежедневно с 9:00 до 20:00</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('lead-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('form-note').textContent = 'Заявка отправлена! Мы скоро перезвоним.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

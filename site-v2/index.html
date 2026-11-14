@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Потолок&Свет | Натяжные потолки в Набережных Челнах</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <header class="header container">
+    <span class="brand">Потолок<span class="amp">&amp;</span>Свет</span>
+    <nav class="nav">
+      <a href="#works">Работы</a>
+      <a href="#prices">Цены</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn-pill" href="#contacts">Вызвать замерщика</a>
+  </header>
+
+  <section class="hero container">
+    <p class="tag">Набережные Челны · монтаж за 1 день</p>
+    <h1>Потолок,<br />который <span class="grad">меняет комнату</span></h1>
+    <p class="lead">Натяжные потолки с подсветкой под ключ. Замер бесплатно, гарантия 15 лет, чистый монтаж без пыли.</p>
+    <div class="hero-actions">
+      <a class="btn-grad" href="#contacts">Рассчитать стоимость</a>
+      <a class="btn-ghost" href="#works">Смотреть работы</a>
+    </div>
+    <div class="stats">
+      <div><b>12 лет</b><span>на рынке Челнов</span></div>
+      <div><b>4 800+</b><span>потолков установлено</span></div>
+      <div><b>15 лет</b><span>гарантии по договору</span></div>
+    </div>
+  </section>
+
+  <section id="works" class="container section">
+    <h2>Наши работы</h2>
+    <div class="gallery">
+      <div class="tile t1"><span>Зал · парящий потолок</span></div>
+      <div class="tile t2"><span>Спальня · матовый</span></div>
+      <div class="tile t3"><span>Кухня · световые линии</span></div>
+      <div class="tile t4"><span>Детская · двухуровневый</span></div>
+    </div>
+  </section>
+
+  <section id="prices" class="container section">
+    <h2>Цены</h2>
+    <div class="cards">
+      <article class="glass">
+        <h3>Матовый</h3>
+        <p class="price">от 350 ₽/м²</p>
+        <p class="muted">Классика для спальни и зала. Ровная поверхность без бликов.</p>
+      </article>
+      <article class="glass featured">
+        <span class="badge">хит</span>
+        <h3>С подсветкой</h3>
+        <p class="price">от 690 ₽/м²</p>
+        <p class="muted">Парящий потолок или световые линии. Тёплый сценарий света в подарок.</p>
+      </article>
+      <article class="glass">
+        <h3>Глянцевый</h3>
+        <p class="price">от 390 ₽/м²</p>
+        <p class="muted">Отражает свет и визуально увеличивает комнату.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacts" class="container section contacts">
+    <div>
+      <h2>Оставьте заявку</h2>
+      <p class="muted">Перезвоним за 15 минут в рабочее время и согласуем удобный день замера.</p>
+      <p class="phone"><a href="tel:+78552000000">+7 (8552) 00-00-00</a></p>
+    </div>
+    <form class="glass form" id="lead-form">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+      <button class="btn-grad" type="submit">Жду звонка</button>
+      <p class="note" id="form-note">Нажимая кнопку, вы соглашаетесь с обработкой данных.</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Потолок&Свет</span>
+      <span>Набережные Челны · ежедневно 9:00-20:00</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('lead-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('form-note').textContent = 'Заявка отправлена! Мы скоро перезвоним.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

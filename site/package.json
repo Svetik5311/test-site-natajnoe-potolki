@@ -1,0 +1,9 @@
+{
+  "name": "potolok-svet-first-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Первый сайт бренда Потолок&Свет (учебное задание)",
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
