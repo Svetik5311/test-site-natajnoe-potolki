@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Потолок&Свет | Две версии сайта</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      background: #0B0F1A; color: #EAEAF2; padding: 24px;
+    }
+    .wrap { max-width: 760px; text-align: center; }
+    h1 { font-size: 34px; margin-bottom: 8px; }
+    h1 span { background: linear-gradient(120deg, #7C5CFF, #FF5CA8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    p.sub { color: #9AA0B5; margin-bottom: 36px; }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    a.card {
+      display: block; text-decoration: none; color: #EAEAF2;
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 20px;
+      padding: 28px; background: rgba(255,255,255,0.06); text-align: left;
+    }
+    a.card:hover { border-color: #7C5CFF; }
+    a.card h2 { font-size: 20px; margin-bottom: 8px; }
+    a.card p { color: #9AA0B5; font-size: 14px; }
+    .tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 14px; }
+    .t1 { background: rgba(245,166,35,0.15); color: #F5A623; }
+    .t2 { background: linear-gradient(120deg, #7C5CFF, #FF5CA8); color: #fff; }
+    @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Потолок<span>&amp;</span>Свет</h1>
+    <p class="sub">Натяжные потолки в Набережных Челнах. Две версии сайта:</p>
+    <div class="cards">
+      <a class="card" href="site/">
+        <span class="tag t1">версия 1</span>
+        <h2>Классическая</h2>
+        <p>Светлый лендинг: герой, преимущества, цены, форма заявки.</p>
+      </a>
+      <a class="card" href="site-v2/">
+        <span class="tag t2">версия 2</span>
+        <h2>В стиле Dribbble</h2>
+        <p>Тёмная тема, градиенты, стеклянные карточки, галерея работ.</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
